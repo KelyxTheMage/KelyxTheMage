@@ -1,0 +1,228 @@
+/* import a font from google */
+@font-face {
+  font-family: Mysticora;
+  src: url(DS_Mysticora.ttf);
+}
+
+div {
+  font-family: Mysticora;
+}
+
+/* main styles for the body, global background color, text color, font, 0 out margin */
+body {
+  font-family: 'Mysticora', sans-serif;
+  background-color: #fafafa;
+  color: #fdfdfd;
+  margin: 0;
+}
+
+
+/* styles for the nav */
+/* position fixed keeps the nav from scrolling off screen */
+/* top and left position the nav */
+/* flex styling keeps the nav elements nicely spaced out */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 8px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #fdfdfd;
+}
+
+/* a tags withing .nav should have a set color ( so they don't turn blue ) */
+/* and no decoration */
+.nav a {
+  color: #fdfdfd;
+  text-decoration: none;
+}
+
+/* apply a line through style to nav a tags on hover */
+.nav a:hover {
+  text-decoration: line-through;
+}
+
+/* 0 out the margin on divs */
+div {
+  margin: 0;
+}
+
+/* styles for the home page */
+/* set the background image */
+/* and flex align all the content on the page */
+#home {
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  background-position: center;
+
+}
+
+#home h1 {
+  font-size: 8em;
+  margin: 16px;
+}
+
+#home h3 {
+  text-align: center;
+  margin: 0;
+}
+
+#home .hero-text-container {
+  text-align: center;
+  padding-top: 128px;
+  padding-bottom: 64px;
+}
+
+.slideshow {
+  min-height: 400px;
+}
+.slideshow-image {
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+.slideshow-zoom {
+  position: fixed;
+  top: 10vh;
+  left: 10vw;
+  width: 80vw;
+  height: 80vh;
+}
+
+.slideshow-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.5;
+}
+/* style for the projects pageg */
+#about {
+  background: linear-gradient(darkslateblue, indigo, rebeccapurple, darkviolet);
+
+}
+
+#about h3 {
+  text-align: center;
+  padding-top: 128px;
+  margin: 0;
+}
+
+#about p {
+  text-align: center;
+  padding-top: 100px;
+}
+
+/* silly background rainbow gradient */
+#projects {
+  background: linear-gradient(darkslateblue, indigo, rebeccapurple, darkviolet);
+}
+
+/* projects container stores all the project images */
+/* padding to keep from overlapping with the nav */
+/* flex style to keep all the projects looking nice */
+.projects-container {
+  padding-top: 64px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* project div styles */
+/* background image displays the project image */
+.project {
+  width: 500px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  margin: 16px;
+}
+
+/* styles for project detail page */
+#project-detail {
+  background-color: indigo;
+}
+
+#project-detail h1 {
+  padding-top: 128px;
+  font-size: 8em;
+  margin-top: 0;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+#project-detail p {
+  font-size: 2em;
+  text-align: center;
+  text-decoration: underline;
+}
+
+#project-detail img {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 64px;
+}
+
+
+/* some default page styles */
+/* min width and min height so our images always take the whole page */
+.page {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+/* this should probably be scoped to the nav but we didn't get there */
+a {
+  font-size: 2em;
+}
+
+
+/* project specific styling */
+/* set background image and change bg position where needed */
+#image-1 {
+  background-image: url("images/image-1.jpeg");
+}
+#image-2 {
+  background-image: url("images/image-2.jpeg");
+}
+#image-3 {
+  background-image: url("images/image-3.jpeg");
+}
+#image-4 {
+  background-image: url("images/image-4.jpeg");
+}
+#image-5 {
+  background-image: url("images/image-5.jpeg");
+}
+#image-6 {
+  background-image: url("images/image-6.jpeg");
+}
+#image-7 {
+  background-image: url("images/image-7.jpeg");
+}
+#image-8 {
+  background-image: url("images/image-8.jpeg");
+  background-position: middle;
+}
+
+#contact {
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  background-position: center;
+
+}
+
+#links {
+  text-align: center;
+  padding-top: 128px;
+  margin: 0;
+}
